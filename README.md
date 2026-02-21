@@ -1,65 +1,61 @@
-# LYRA - Learns How You Learn
+# LYRA – Learns How You Learn
 
-A proactive mentor for beginner coders that detects struggles, provides emotional support, and fixes errors automatically.
+**Proactive AI-powered coding mentor for beginners**  
+LYRA is your gentle, confidence-building sidekick in VS Code — especially for girls in hackathons, shy students, first-time coders, and self-learners.  
 
-## Features
+Instead of waiting for you to ask, LYRA **watches silently** and intervenes when you're struggling (repeated errors, long pauses, backspacing, etc.) with warm encouragement, simple analogies, tiny fixes, and final confidence nudges. No overwhelming walls of text — just empathetic, personalized help.
 
-- **🎯 Smart Error Detection**: Automatically identifies syntax errors, runtime issues, and common beginner mistakes
-- **💬 Emotional Support**: Provides encouraging messages and helpful guidance in your sidebar
-- **🔧 Automatic Fixes**: Suggests and applies fixes for detected issues
-- **📊 Learning Analysis**: Tracks your coding patterns and adapts to your learning style
-- **🚀 Non-intrusive**: Runs silently in the background without affecting your workflow
+## ✨ Features (5+)
+
+- 🎯 **Smart Struggle Detection** — Detects repeated syntax/runtime errors, pauses >30s, excessive deletes, cursor hesitation, repeated line edits.
+- 💬 **Warm Emotional Support** — Friendly messages like: “Hey, this is super common — you’re doing great! 💛”
+- 🔧 **Tiny Step-by-Step Fixes** — Shows only the corrected snippet + beginner-friendly analogy.
+- 🌱 **Confidence Nudges** — Ends with uplifting reminders: “You’re so close — this mistake is very normal!”
+- 🪶 **Non-intrusive Sidebar** — Help appears gently in a dedicated “LYRA Mentor” sidebar; no popups or workflow disruption.
+- 🐍 **Python-first (MVP)** — Optimized for Python beginners (hackathons, data intro, school projects).
+
+## Tech Stack
+
+- **VS Code Extension API** (TypeScript)
+- **Groq LLM API** — Fast, free-tier inference for explanations/fixes
+- **Rule-based detection** — Lightweight, no heavy ML needed
+- **Dependencies** — Listed in `package.json` (e.g., vscode ^1.85.0)
 
 ## Requirements
 
 - VS Code 1.85.0 or later
-- Node.js 18.x or later
+- Node.js 18.x or later (for extension development/testing)
+- Groq API key (free at console.groq.com)
 
-## How LYRA Works
+## Installation & Setup
 
-1. **Activate**: The extension starts automatically when you open Python files
-2. **Monitor**: Watches for errors and coding patterns in real-time
-3. **Analyze**: Uses AI to understand your code and identify learning opportunities
-4. **Help**: Displays support and suggestions in the LYRA Mentor sidebar
+1. **Install the Extension**  
+   - From Marketplace (when published): Search “LYRA” in Extensions view → Install  
+   - Manual (.vsix): Download from Releases → Extensions → … → Install from VSIX… → Select file → Reload if prompted
 
-## Getting Started
+2. **Set Groq API Key** (Required)  
+   - In VS Code Settings (Ctrl+,): Search “LYRA” → Paste your key (recommended)  
+   - OR Environment: `export GROQ_API_KEY=gsk_...` (or .env if your code loads it)
 
-1. Install the extension from the VS Code Marketplace
-2. Click the LYRA icon in the activity bar on the left
-3. Start coding in Python - LYRA will help you along the way!
+3. **Activate**  
+   - Open any `.py` file → LYRA auto-starts  
+   - Click LYRA icon in Activity Bar to open Mentor sidebar
 
-## Configuration
+## Screenshots
 
-Set your Groq API Key as an environment variable:
+  
+(screenshots/lyra-nudge.pn<img width="1920" height="1080" alt="Screenshot 2026-02-21 094901" src="https://github.com/user-attachments/assets/8594b793-1525-4de4-9b64-e4c5269b9139" />
+g)
 
-```bash
-GROQ_API_KEY=your_api_key_here
-```
+<img width="1920" height="1080" alt="Screenshot 2026-02-21 094833" src="https://github.com/user-attachments/assets/ed6ff14b-e866-4bce-9ba6-5616ab968c5d" />
 
-## Support
+## Team Members
 
-For issues, suggestions, or feedback, visit: https://github.com/adithyaradhakrishna/lyra
+- Adithya – Thrissur, Kerala, India
+- Angel– Thrissur, Kerala, India
 
-## Release Notes
+## License
 
-### 0.0.1
+MIT License – see [LICENSE](./LICENSE)
 
-- Initial release of LYRA
-- Python file monitoring
-- Basic error detection and suggestions
-- LYRA Mentor sidebar with help content
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Happy coding! 💛

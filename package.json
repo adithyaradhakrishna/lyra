@@ -1,5 +1,6 @@
 {
   "name": "lyra",
+  "publisher": "adithyaradhakrishna",
   "displayName": "LYRA - Learns How You Learn",
   "description": "Proactive mentor for beginner coders – detects struggles, gives emotional support + fixes automatically",
   "version": "0.0.1",

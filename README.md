@@ -1,53 +1,53 @@
-# lyra README
+# LYRA - Learns How You Learn
 
-This is the README for your extension "lyra". After writing up a brief description, we recommend including the following sections.
+A proactive mentor for beginner coders that detects struggles, provides emotional support, and fixes errors automatically.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **🎯 Smart Error Detection**: Automatically identifies syntax errors, runtime issues, and common beginner mistakes
+- **💬 Emotional Support**: Provides encouraging messages and helpful guidance in your sidebar
+- **🔧 Automatic Fixes**: Suggests and applies fixes for detected issues
+- **📊 Learning Analysis**: Tracks your coding patterns and adapts to your learning style
+- **🚀 Non-intrusive**: Runs silently in the background without affecting your workflow
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VS Code 1.85.0 or later
+- Node.js 18.x or later
 
-## Extension Settings
+## How LYRA Works
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. **Activate**: The extension starts automatically when you open Python files
+2. **Monitor**: Watches for errors and coding patterns in real-time
+3. **Analyze**: Uses AI to understand your code and identify learning opportunities
+4. **Help**: Displays support and suggestions in the LYRA Mentor sidebar
 
-For example:
+## Getting Started
 
-This extension contributes the following settings:
+1. Install the extension from the VS Code Marketplace
+2. Click the LYRA icon in the activity bar on the left
+3. Start coding in Python - LYRA will help you along the way!
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Configuration
 
-## Known Issues
+Set your Groq API Key as an environment variable:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+```bash
+GROQ_API_KEY=your_api_key_here
+```
+
+## Support
+
+For issues, suggestions, or feedback, visit: https://github.com/adithyaradhakrishna/lyra
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
+- Initial release of LYRA
+- Python file monitoring
+- Basic error detection and suggestions
+- LYRA Mentor sidebar with help content
 
 ## Working with Markdown
 

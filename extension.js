@@ -2,7 +2,7 @@ const vscode = require('vscode');
 const { OpenAI } = require('openai');
 
 const openai = new OpenAI({
-  apiKey: 'YOUR_GROQ_API_KEY', // ← PASTE YOUR REAL GROQ API KEY HERE
+  apiKey: process.env.GROQ_API_KEY,
   baseURL: 'https://api.groq.com/openai/v1'
 });
 
